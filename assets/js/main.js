@@ -107,7 +107,7 @@ function getUrl(start_date, end_date){
     var start = parseDate(start_date);
     var end = parseDate(end_date);
     var url = "https://api.nasa.gov/neo/rest/v1/feed?start_date="+start+"&end_date="+end;
-    return url +"&api_key="+ "uqk8j9j2ilePz3nYK1nWfjPv0WnZWqIMJ9qda70O";
+    return url +"&api_key="+ "XXXXXXXXXXXXX"; // use your private key !
 }
 
 function parseDate(date){
