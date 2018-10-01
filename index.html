@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Using NASA API NEOWs">
+        <meta name="keywords" content="HTML,CSS,JavaScript">
+        <meta name="author" content="Angele Demeurant">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/date-picker/jquery-ui.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    </head>
+    <body>
+        <div id="loader"></div>
+        <div id="popup" class="overlay">
+            <div class="popup">
+                <a class="close" id="close" href="#">&times;</a>
+                <div class="content">
+                    <div class="text">
+                        <p><span>Total of : </span><span id="total"></span> objects</p>
+                    </div>
+                    <div class="text">
+                        <p><span>From: </span><input type="text" id="from"></p>
+                        <p><span>To: </span><input type="text" id="to"></p>
+                    </div>  
+                    <div class="text">
+                        <p><span class="stylish-text">Furthest: </span><span id="furthest"></span> km</p>
+                        <p><span class="stylish-text">Closest: </span><span id="closest"></span> km</p>
+                    </div>
+                    <div class="text">
+                        <p><span class="stylish-text">Biggest: </span><span id="biggest"></span> m</p>
+                        <p><span class="stylish-text">Smallest: </span><span id="smallest"></span> m</p>
+                    </div>
+                    <div class="text">
+                        <p><span class="stylish-text">Fastest: </span><span id="fastest"></span> km/h</p>
+                        <p><span class="stylish-text">Slowest: </span><span id="slowest"></span> km/h</p>
+                    </div>
+                    <div class="text">
+                        <ul>
+                            <li>
+                                <div> distance from Earth to object:</div>
+                                <div>  200000 kilometers for 1 pixel</div>
+                            </li>
+                            <li><div> diameters:</div>
+                                <div> 25 meters for 1 pixel </div>
+                            </li>
+                            <li>
+                                <div> Animation speed:</div>
+                                <div> 10000km / velocity * 50 for 1 second</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="plan">
+            <ul id="objects"></ul>
+        </div>
+    </body>
+    <script src="assets/js/jquery-1.12.4.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/main.js"></script>
+</html>
